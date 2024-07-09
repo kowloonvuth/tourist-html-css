@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: "Noto Sans Khmer", sans-serif;
+}
+
+header {
+  background-color: #808080;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header h2 {
+  margin: 10px 0 0 0;
+  font-size: 1.5rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-item: center;
+  text-align: left;
+  padding: 20px;
+  gap: 30px;
+  background-color: #fff;
+}
+
+.gallery {
+  text-align: center;
+  width: 400px;
+  max-width: 800px;
+  border: 1px solid #d3d3d3;
+}
+
+.gallery img {
+  margin-top: 5px;
+  width: 95%;
+  height: 70%;
+  max-height: 300px;
+  object-fit: cover;
+  border: 1px solid #d3d3d3;
+}
+
+.gallery p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.gallery .title {
+  color: #0000ff;
+}
+
+footer .title {
+  color: #0000ff;
+}
+
+.text .title {
+  color: #0000ff;
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #fff;
+  color: #000;
+  margin-top: auto;
+}
+
+@media (max-width: 800px) {
+  .image-container {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .gallery {
+    width: 100%;
+    max-width: 150%;
+    border: 1px solid #d3d3d3;
+    height: 80%;
+  }
+
+  .gallery p {
+    font-size: 0.8rem;
+    object-fit: cover;
+  }
+}
